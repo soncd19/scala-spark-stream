@@ -1,0 +1,30 @@
+{
+  "UserHeader": {
+      "User": "PHUONGPV6",
+      "SocketChannel": "Data",
+      "MyAction": "SELECT",
+      "TableName": "PARTB_WORK_CRITERIA",
+      "SpecialMission": "No",
+      "SpecialMessage": {}
+  },
+  "Data": {
+      "UserData": {
+          "User": "PHUONGPV6",
+          "SocketChannel": "Data",
+          "MyAction": "SELECT",
+          "TableName": "PARTB_WORK_CRITERIA",
+          "SpecialMission": "No",
+          "SpecialMessage": {}
+      },
+      "ActionArray": [
+          {
+              "Select": "select * from PARTB_WORK_CRITERIA ",
+              "Where": " ",
+              "GroupBy": " ",
+              "Having": " ",
+              "OrderBy": " ",
+              "Paging": " OFFSET 0 ROWS FETCH NEXT 1000 ROWS ONLY "
+          }
+      ]
+  }
+}

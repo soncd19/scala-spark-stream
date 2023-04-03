@@ -1,0 +1,266 @@
+{
+  "UserHeader": {
+      "SocketChannel": "Data",
+      "TableName": "PARTB_WORK_CRITERIA",
+      "MyAction": "SELECT",
+      "User": "PHUONGPV6",
+      "SpecialMission": "No",
+      "SpecialMessage": {}
+  },
+  "Data": [
+      {
+          "FieldList": [
+              {
+                  "FieldName": "MYID",
+                  "FieldType": "NUMBER"
+              },
+              {
+                  "FieldName": "MYTIME",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "PARENT_ID",
+                  "FieldType": "NUMBER"
+              },
+              {
+                  "FieldName": "PURPOSE_CODE",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "PURPOSE_DESC",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "RULE_TABLE_CODE",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_ID",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_DATE",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_FILTER",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_AMOUNT",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_TENOR",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_REV_TENOR",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "SQL_LCY_AMOUNT",
+                  "FieldType": "VARCHAR2"
+              },
+              {
+                  "FieldName": "TIMEBUCKET",
+                  "FieldType": "VARCHAR2"
+              }
+          ],
+          "Data": [
+              {
+                  "0": "3260461",
+                  "1": "2022-03-23T16:43:07.459000",
+                  "2": null,
+                  "3": "30Day_BalanceMin",
+                  "4": "Số dư tối thiểu 30 ngày liền kề",
+                  "5": "TổngHợp30Ngày",
+                  "6": null,
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": null,
+                  "9": "MIN(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": null,
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260462",
+                  "1": "2022-03-24T00:38:37.920000",
+                  "2": null,
+                  "3": "GapTM",
+                  "4": "Tiền mặt",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260088",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('10')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260468",
+                  "1": "2022-03-24T07:36:59.837000",
+                  "2": null,
+                  "3": "DTTKTM",
+                  "4": "1. Tiền mặt, vàng",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260040",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('10')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": "FN_STD_TENOR001('TENOR',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "11": "FN_STD_TENOR001('TENOR_REV',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260469",
+                  "1": "2022-03-24T07:36:59.840000",
+                  "2": null,
+                  "3": "DTTKTM",
+                  "4": "2. Tiền gửi thanh toán",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260041",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('11')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": "FN_STD_TENOR001('TENOR',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "11": "FN_STD_TENOR001('TENOR_REV',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260470",
+                  "1": "2022-03-24T07:36:59.843000",
+                  "2": null,
+                  "3": "DTTKTM",
+                  "4": "3. Các loại giấy tờ có giá",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260042",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('12')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": "FN_STD_TENOR001('TENOR',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "11": "FN_STD_TENOR001('TENOR_REV',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260471",
+                  "1": "2022-03-24T07:36:59.846000",
+                  "2": null,
+                  "3": "DTTKTM",
+                  "4": "4.a. Tiền trên tài khoản thanh toán",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260467",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('10')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": "FN_STD_TENOR001('TENOR',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "11": "FN_STD_TENOR001('TENOR_REV',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260472",
+                  "1": "2022-03-24T07:36:59.849000",
+                  "2": null,
+                  "3": "DTTKTM",
+                  "4": "4.b. Các khoản đã cam kết cho mục đích thanh toán cụ thể",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260466",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "PRODUCT_GROUP IN ('CAMKET_TT')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": "FN_STD_TENOR001('TENOR',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "11": "FN_STD_TENOR001('TENOR_REV',VALUE_DATE,MATURITY_DATE,VALUE_DATE)",
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260680",
+                  "1": "2022-05-17T10:29:25.550000",
+                  "2": null,
+                  "3": "30Day_Count",
+                  "4": "Số đếm 30 ngày liền kề",
+                  "5": "TổngHợp30Ngày",
+                  "6": null,
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": null,
+                  "9": "COUNT(1)",
+                  "10": null,
+                  "11": null,
+                  "12": null,
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "1",
+                  "1": null,
+                  "2": null,
+                  "3": "30Day_BalanceAverage",
+                  "4": "Trung bình 30 ngày liền kề",
+                  "5": "TổngHợp30Ngày",
+                  "6": null,
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": null,
+                  "9": "AVG(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": null,
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260460",
+                  "1": "2022-03-22T04:17:24.109000",
+                  "2": null,
+                  "3": "30Day_BalanceMax",
+                  "4": "Số dư tối đa 30 ngày liền kề",
+                  "5": "TổngHợp30Ngày",
+                  "6": null,
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": null,
+                  "9": "MAX(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": null,
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260464",
+                  "1": "2022-03-24T00:56:11.562000",
+                  "2": null,
+                  "3": "GapTGNHNN",
+                  "4": "Tiền gửi tại NHNN",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260089",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,2) IN ('11')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              },
+              {
+                  "0": "3260465",
+                  "1": "2022-03-24T01:04:34.510000",
+                  "2": null,
+                  "3": "Gap3.1.a",
+                  "4": "3.1.a.Tiền gửi không kỳ hạn",
+                  "5": "TổngHợp01Ngày",
+                  "6": "3260092",
+                  "7": "MAX(FR_EFF_DATE)",
+                  "8": "SUBSTR(ACCTNO_GL,1,4) IN ('1311')",
+                  "9": "SUM(NVL(BALANCE,0))",
+                  "10": null,
+                  "11": null,
+                  "12": "SUM(NVL(FINAL_BALANCE,0))",
+                  "13": "CASHFLOW001"
+              }
+          ]
+      }
+  ]
+}
